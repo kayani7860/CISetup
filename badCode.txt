@@ -1,0 +1,93 @@
+
+public class Calculator {
+	public int sum(int a, int b) {
+		return a + b;
+	}
+
+	public int minus(int a, int b) {
+		return a - b;  // ERROR!!!
+	}
+
+	public int divide(int a, int b) {
+		return a / b;
+	}
+
+	public int multiply(int a, int b) {
+		return a * b;
+	}
+
+}
+
+---------------------------------------------------------------
+
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class SampleTest {
+	@Test
+	public void testSum() {
+		// Given
+		Calculator calculator = new Calculator();
+		// When
+		int result = calculator.sum(2, 2);
+		// Then
+		if (result != 4) {   // if 2 + 2 != 4
+			Assert.fail();
+		}
+	}
+
+	@Test
+	public void testMinus() {
+		Calculator calculator = new Calculator();
+		Assert.assertEquals(0, calculator.minus(2, 2));
+	}
+
+	@Test
+	public void testDivide() {
+		Calculator calculator = new Calculator();
+		Assert.assertEquals(2, calculator.divide(6, 3));
+	}
+
+	@Test(expected = ArithmeticException.class)
+	public void testDivideWillThrowExceptionWhenDivideOnZero() {
+		Calculator calculator = new Calculator();
+		calculator.divide(6, 0);
+	}
+	
+	
+
+}
+
+
+------------------------------------------------------------
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>aaa</groupId>
+  <artifactId>asd1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+ <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13</version>
+    <scope>test</scope>
+</dependency>
+</dependencies>
+
+  
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+              <version>2.3.2</version>
+            <configuration>
+                <source>6</source>
+                <target>1.6</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+</project>
