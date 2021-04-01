@@ -31,7 +31,7 @@ public class SampleTest {
 	 
 	   @Test
 	   public void testDivIntFail() {
-		   Assert.assertEquals("error in divInt()", 3, Calculator.divInt(9, 3));
+		   Assert.assertEquals("error in divInt this is added!!!()", 3, Calculator.divInt(9, 3));
 	   }
 	   
 	   @Test(expected = IllegalArgumentException.class)
