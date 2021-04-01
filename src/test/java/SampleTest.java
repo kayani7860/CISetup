@@ -13,7 +13,7 @@ public class SampleTest {
 	@Test
 	public void AddFuncTest() {
 		assertEquals("",3,cal.add(2,1));
-		
+		assertEquals(10,cal.add(5,5 ));
 	}
 	
 
