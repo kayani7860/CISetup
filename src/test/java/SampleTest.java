@@ -23,6 +23,17 @@ public class SampleTest {
 	      
 	    }
 	
+	@Test
+	   public void testDivIntPass() {
+		Assert.assertEquals("error in divInt()", 3, Calculator.divInt(9, 3));
+	      Assert.assertEquals("error in divInt()", 0, Calculator.divInt(1, 9));
+	   }
+	 
+	   @Test
+	   public void testDivIntFail() {
+		   Assert.assertEquals("error in divInt()", 1, Calculator.divInt(9, 3));
+	   }
+	
 	
 
 }
