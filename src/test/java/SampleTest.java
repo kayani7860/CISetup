@@ -14,6 +14,8 @@ public class SampleTest {
 	public void AddFuncTest() {
 		assertEquals("",3,cal.add(2,1));
 		assertEquals(10,cal.add(5,5 ));
+		assertEquals(13,cal.add(5,8 ));
+
 	}
 	
 
