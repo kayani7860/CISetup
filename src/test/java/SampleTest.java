@@ -21,7 +21,7 @@ public class SampleTest {
 	public void addFunc2() {
 		
 		int result=cal.add(2, 2);
-		if(result!=5) {
+		if(result!=4) {
 			Assert.fail();
 		}
 			
@@ -30,7 +30,7 @@ public class SampleTest {
 	@Test
 	public void subtractTest() {
 		
-		assertEquals(4,cal.subtract(8,0));
+		assertEquals(4,cal.subtract(8,4));
 	}
 	
 
