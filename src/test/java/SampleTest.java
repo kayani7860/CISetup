@@ -39,11 +39,7 @@ public class SampleTest {
 	public void AddFuncTest4() {
 		assertEquals(14,cal.add(5,9 ));
 	}
-	@Test
-	public void subtractTest() {
-		assertEquals(8,cal.subtract(20,12));
-		
-	}
+
 
 	
 
