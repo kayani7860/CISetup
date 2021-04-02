@@ -39,6 +39,14 @@ public class SampleTest {
 	public void AddFuncTest4() {
 		assertEquals(14,cal.add(5,9 ));
 	}
+	
+	@Test
+	public void SubtractTest() {
+		
+		assertEquals(4,cal.subtract(12,8));
+	}
+	
+	
 
 
 	

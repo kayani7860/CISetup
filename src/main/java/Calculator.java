@@ -5,6 +5,11 @@ public class Calculator {
 		return a+b;
 	}
 
+	public int subtract(int i, int j) {
+		
+		return i+j;
+	}
+
 
 
 	
