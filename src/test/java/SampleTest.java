@@ -51,6 +51,8 @@ public class SampleTest {
 		Calculator calculator = new Calculator();
 		Assert.assertEquals(18, calculator.mul(6, 3));
 	}
+	
+	
 
 
 
