@@ -46,11 +46,14 @@ public class SampleTest {
 		assertEquals(4,cal.subtract(12,8));
 	}
 	
-	
+	@Test
+	public void testmul() {
+		Calculator calculator = new Calculator();
+		Assert.assertEquals(18, calculator.mul(6, 3));
+	}
 
 
-	
 
-	
+
 
 }
