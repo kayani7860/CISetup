@@ -14,9 +14,9 @@ public class Calculator {
       return number1 * number2;
    }
 
-		public Object div(int i, int j) {
-			// TODO Auto-generated method stub
-			return null;
+		public int div(int i, int j) {
+			
+			return i/j;
 		}
         
 
