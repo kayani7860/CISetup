@@ -52,6 +52,7 @@ public class SampleTest {
 		Assert.assertEquals(18, calculator.mul(6, 3));
 	}
 	
+	@Test
 	public void testDiv() {
 		Assert.assertEquals(4,cal.div(12,3));
 	}
